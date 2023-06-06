@@ -1,4 +1,6 @@
-package local.tennisreservation.tennis;
+package local.tennisreservation.tennis.court;
+
+import local.tennisreservation.tennis.surface.SurfaceType;
 
 import java.util.concurrent.atomic.AtomicLong;
 

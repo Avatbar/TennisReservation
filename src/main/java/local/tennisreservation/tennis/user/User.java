@@ -1,4 +1,4 @@
-package local.tennisreservation.tennis;
+package local.tennisreservation.tennis.user;
 
 import java.util.concurrent.atomic.AtomicLong;
 

@@ -1,4 +1,6 @@
-package local.tennisreservation.tennis;
+package local.tennisreservation.tennis.reservation;
+
+import local.tennisreservation.tennis.court.Court;
 
 import java.util.concurrent.atomic.AtomicLong;
 

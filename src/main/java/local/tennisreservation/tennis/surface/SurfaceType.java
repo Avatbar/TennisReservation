@@ -1,4 +1,4 @@
-package local.tennisreservation.tennis;
+package local.tennisreservation.tennis.surface;
 
 import java.util.concurrent.atomic.AtomicLong;
 
@@ -15,6 +15,12 @@ public class SurfaceType {
 
     public SurfaceType(String typeOfSurface, Float price) {
         this.id = ID_GENERATOR.getAndIncrement();
+        this.typeOfSurface = typeOfSurface;
+        this.pricePerMinute = price;
+    }
+
+    public SurfaceType(Long id, String typeOfSurface, Float price) {
+        this.id = id;
         this.typeOfSurface = typeOfSurface;
         this.pricePerMinute = price;
     }
