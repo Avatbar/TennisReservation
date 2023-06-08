@@ -8,7 +8,7 @@ import java.util.concurrent.atomic.AtomicLong;
  * @author Tadeas Machacek
  */
 @Entity
-@Table
+@Table(name = "surface_table")
 public class SurfaceType {
     @Id
     @SequenceGenerator(
@@ -20,7 +20,6 @@ public class SurfaceType {
             strategy = GenerationType.SEQUENCE,
             generator = "surface_type_sequence"
     )
-
     private Long id;
     private static final AtomicLong ID_GENERATOR = new AtomicLong();
 

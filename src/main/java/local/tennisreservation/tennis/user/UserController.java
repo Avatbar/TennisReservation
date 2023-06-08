@@ -9,7 +9,7 @@ import java.util.List;
  * @author Tadeas Machacek
  */
 @RestController
-@RequestMapping(path = "api/v1/users")
+@RequestMapping(path = "api/v1/registeredUser")
 public class UserController {
     private final UserService userService;
 

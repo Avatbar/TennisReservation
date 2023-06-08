@@ -1,6 +1,6 @@
 package local.tennisreservation.tennis.court;
 
-import local.tennisreservation.tennis.court.Court;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,8 +13,15 @@ import java.util.List;
 @RestController
 @RequestMapping(path = "api/v1/court")
 public class CourtController {
-    @GetMapping("/")
+    private final CourtService courtService;
+
+    @Autowired
+    public CourtController(CourtService courtService) {
+        this.courtService = courtService;
+    }
+
+    @GetMapping
     public List<Court> getCourts() {
-        return null;
+        return courtService.getCourts();
     }
 }
